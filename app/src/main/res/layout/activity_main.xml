@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="40dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Masukkan Kota Asal" />
+
+    <Spinner
+        android:id="@+id/kotaAsal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/white"
+        android:entries="@array/pilihKota"
+        android:padding="8dp"
+        android:prompt="@string/kota" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Masukkan Kota Tujuan" />
+
+    <Spinner
+        android:id="@+id/kotaTuj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:background="@color/white"
+        android:entries="@array/pilihKota"
+        android:padding="8dp"
+        android:prompt="@string/kota" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:text="Tanggal Keberangkatan" />
+
+    <DatePicker
+        android:id="@+id/tgl"
+        android:layout_width="wrap_content"
+        android:layout_height="280dp"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="327dp"
+        android:layout_marginTop="50dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Next" />
+
+
+</LinearLayout>
